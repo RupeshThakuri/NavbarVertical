@@ -1,0 +1,61 @@
+body {
+    background-color: aquamarine;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 4em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em 0 2em;
+    box-shadow: 3px 11px 11px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 11px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 11px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.toogle-menu img {
+    height: 2em;
+    width: 2em;
+}
+
+.toogle-menu {
+    display: none;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .menu-bar {
+        display: none;
+    }
+    .toogle-menu {
+        display: block;
+    }
+    .menu-disappear {
+        display: none;
+    }
+    .wrong {
+        display: none;
+    }
+    .bring-back {
+        display: block;
+        position: absolute;
+        background-color: rgb(5, 143, 120);
+        width: 35%;
+        left: 0;
+        height: 100%;
+        margin-top: 39em;
+        transition: .6s ease-in;
+        padding: 6em 0 1.5em 0;
+    }
+    .bring-back a {
+        display: block;
+        border-bottom: 1px solid black;
+        width: fit-content;
+        margin-bottom: 5em;
+    }
+}
